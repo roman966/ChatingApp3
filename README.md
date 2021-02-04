@@ -16,7 +16,7 @@ Install node.js --version 14.10.0
 
 
 
-### For install globally ef core, run 
+### Install ef core
 ``` dotnet tool install --global dotnet-ef --version 5.0.1```
 
 
@@ -41,7 +41,7 @@ Put your connection string to "DefaultConnection" variable.Here 'Data Source' co
 
 
 
-## For migrations, run this command inside API folder 
+## For migrations,
 ```dotnet ef migrations add Testing```
 
 
@@ -49,26 +49,19 @@ Put your connection string to "DefaultConnection" variable.Here 'Data Source' co
 
 
 ## Finally update the database by running 
-```bash dotnet ef database update```
+```dotnet ef database update```
 
 
 
-
-
-
-
-##Then go to the project's client folder and install angular cli globally by running 
+## Install angular CLI
 
 ```npm install -g @angular/cli```
 
 
 
+## Run the project
 
-
-
-## Now go to the project's API folder and run the project 
-
-```bash dotnet run```
+```dotnet run```
 
 Now here if you face any issue with the nuget packages run the command several times,it will work and install 
 the necessary nuget packages.
@@ -76,12 +69,11 @@ the necessary nuget packages.
 
 
 
+## Run the angular app
 
+Now go to another terminal and go to the project's client folder and run 
 
-
-##Now go to another terminal and go to the project's client folder and run 
-
-```bash ng serve``` 
+```ng serve``` 
 
 to run the angular app.
 
@@ -102,5 +94,4 @@ For checking/log in two users at a time you can go to google chrome Incognito mo
 If even google chrome facing CORS issue(it should not) you can go to the security disables chrome version
 simple running this command into WINDOWS+R (Run) command prompt,the command is,
 
-```bash 
-chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security```
+```chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security```
