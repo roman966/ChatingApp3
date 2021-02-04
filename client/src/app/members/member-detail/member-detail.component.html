@@ -1,0 +1,10 @@
+<div class="col-2" *ngIf="member">
+   <tabset class="member-tabset" >
+      <tab heading='{{member.userFirstName}} {{member.userLastName}}'>
+         <div class="mb-2" *ngIf="(prescence.onlineUsers$ | async).includes(member.email)">
+            <i class="fa fa-user-circle text-success">Online now</i>
+         </div>
+         <app-member-messages [useremail]='member.email' ></app-member-messages>
+      </tab>
+   </tabset>
+</div>

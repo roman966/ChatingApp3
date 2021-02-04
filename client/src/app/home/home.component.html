@@ -1,0 +1,27 @@
+<div class = "container mt-5" *ngIf="(accountService.currentUser$ | async) === null">
+    <div  style='text-align:center;'>
+        <h1>Chat with people</h1>
+        <p class="lead">Just one click away...all you need to do is sign up!</p>
+        <div *ngIf="!registerMode" class="text-center">
+            <button (click)="registerToggle()" class="btn btn-primary btn-lg mr-2">Register</button>
+           
+        </div>
+    </div>
+
+    <div *ngIf="registerMode" class="container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <app-register (cancelRegister)="cancelRegisterMode($event)"></app-register>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5" *ngIf="(accountService.currentUser$ | async)">
+    <h1>Chat with People</h1>
+    <p class="lead">See who is in the <a class="nav-link" routerLink='/members' routerLinkActive='active'>List</a></p>
+
+</div>
+
+

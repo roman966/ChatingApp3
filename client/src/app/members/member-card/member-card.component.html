@@ -1,0 +1,19 @@
+<div class="card mb-4">
+    <div class="card-body p-1">
+        <h6 class="card-title text-center mb-1">
+            <span [class.is-online]="(prescence.onlineUsers$ | async).includes(member.email)">
+                <i class="fa fa-user mr-2"></i>
+            </span>
+            
+            {{member.userFirstName}}
+        </h6>
+          <p class="card-text text-muted text-center">
+              {{member.userLastName}}</p>
+    </div>
+    
+            <button routerLink='/members/{{member.email}}' class="btn btn-warning"><i class="fa fa-envelope-open"></i>
+               Chat
+            </button>
+    
+     
+</div>
