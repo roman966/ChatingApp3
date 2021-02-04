@@ -16,21 +16,21 @@ Install node.js --version 14.10.0
 
 
 
-## For install globally ef core, run 
-```bash 
-dotnet tool install --global dotnet-ef --version 5.0.1```
+### For install globally ef core, run 
+``` dotnet tool install --global dotnet-ef --version 5.0.1```
 
 
 
 
 
-## Now put your database Connection string inside 'appsettings.Development.json' file of API folder 
+### Database Connection
+Now put your database Connection string inside 'appsettings.Development.json' file of API folder 
 which looks like,
 
-```bash
-"ConnectionStrings": {
+```"ConnectionStrings": {
     "DefaultConnection":"Data Source=.;Initial Catalog=chatingapp;Integrated Security=True;"
-  }```
+  }
+ ```
 
 Put your connection string to "DefaultConnection" variable.Here 'Data Source' contains the server name and 
 'Initial Catalog' contains database name.You should change those according to your connection string.
@@ -42,8 +42,7 @@ Put your connection string to "DefaultConnection" variable.Here 'Data Source' co
 
 
 ## For migrations, run this command inside API folder 
-```bash
-dotnet ef migrations add Testing```
+```dotnet ef migrations add Testing```
 
 
 
@@ -60,8 +59,7 @@ dotnet ef migrations add Testing```
 
 ##Then go to the project's client folder and install angular cli globally by running 
 
-```bash
-npm install -g @angular/cli```
+```npm install -g @angular/cli```
 
 
 
