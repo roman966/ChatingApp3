@@ -10,9 +10,8 @@ Install node.js --version 14.10.0
 
 
 
-## For enforcing https, run 
-```bash 
-dotnet dev-certs https --trust```
+### For enforcing https, run 
+```dotnet dev-certs https --trust```
 
 
 
