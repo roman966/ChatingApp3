@@ -1,4 +1,4 @@
-#ChattingApp
+# ChattingApp
 
 ## Setup and installation
 
@@ -84,7 +84,8 @@ Now our app will run at http://localhost:4200/
 
 
 
-##Browser 
+## Browser 
+
 Google chrome is strongly recommended for this project for not to face  any CORS issue.
 
 Firefox and other browsers might cause CORS issue.
